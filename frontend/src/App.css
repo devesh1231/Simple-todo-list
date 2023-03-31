@@ -1,0 +1,163 @@
+body{
+  display: flex;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 6rem;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.addTodo {
+  margin: 0.5rem;
+  margin-bottom: none;
+  display: flex;
+  padding: 0.5rem;
+  color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.todoHead {
+  display: flex;
+  justify-content: space-evenly
+  ;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.todoHead > select{
+  height: 2rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border: none;
+  outline: none;
+}
+.todoHead > select:focus {
+  border: none;
+  outline: none;
+}
+.todoHead>select option{
+  background-color: #171717;
+  color: white;
+}
+.todoHead>select:hover{
+  background-color: #363535;
+  color: white;
+}
+
+.addTodoForm {
+  display: flex;
+  align-items: center;
+}
+.addTodoForm > input {
+  color: white;
+  width: 35rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-right: 3rem;
+  background-color: #5c5c5c;
+  padding: 0.8rem 0.8rem;
+}
+.addTodoForm > input::placeholder {
+  color: white;
+}
+.addTodoForm > input:focus {
+  outline: none;
+}
+.addTodoForm > button {
+  width: 10rem;
+  height: 2rem;
+  padding:  0.5rem;
+  border-radius:  0.5rem;
+  text-align: center;
+  border: none;
+  background-color: #c620a7;
+  color: white;
+  cursor: pointer;
+}
+.todos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.todo {
+  width: 19.5rem;
+  height: 8rem;
+  margin-bottom: 3rem;
+  /* margin-right: 2rem; */
+  display: flex;
+}
+.todoCompleted,
+.todoIncompleted {
+  width: 16rem;
+  margin-left: 0.5vmax;
+  border-radius: 10px;
+}
+.todoIncompleted {
+  background-color: #2f2f2f;
+  -moz-box-shadow: 2px 2px 2px rgba(70, 70, 70, 0.3);
+  -webkit-box-shadow: 2px 2px 2px rgba(70, 70, 70, 0.3);
+  box-shadow: 2px 2px 2px rgba(70, 70, 70, 0.3);
+}
+.todoCompleted {
+  background-color: #202020;
+  border: 1px solid #7ab530;
+  -moz-box-shadow: 2px 2px 2px #a2d760;
+  -webkit-box-shadow: 2px 2px 2px #a2d760;
+  box-shadow: 2px 2px 2px #a2d760;
+}
+
+.todoAction {
+  display: flex;
+  padding: 1vmax;
+  justify-content: space-between;
+  align-items: center;
+}
+.todoAction > button {
+  cursor: pointer;
+}
+.completed {
+  width: 10vmax;
+  height: 2vmax;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #afafaf;
+}
+.incompleted {
+  width: 12vmax;
+  height: 2vmax;
+  padding: 5px 7px 5px 7px;
+  border-radius: 2px;
+  text-align: center;
+  border: none;
+  background-color: #c620a7;
+  color: white;
+}
+.deleteCompleted {
+  height: 2vmax;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #afafaf;
+}
+.deleteIncompleted {
+  height: 2vmax;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #c620a7;
+}
